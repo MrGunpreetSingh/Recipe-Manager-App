@@ -3,3 +3,4 @@ The system helps users manage recipes and follow instructions step-by-step durin
 
 Why I Chose This Project
 Cooking is a universal challenge and organizing recipes is something every home cook benefits from—so this project tackles a practical problem, makes good use of multiple screens/views, and clearly demonstrates the value of MVC structure for maintainability and real-world scale.
+<img width="1116" height="986" alt="Screenshot 2025-11-08 045206" src="https://github.com/user-attachments/assets/e9d26974-659f-436a-85c2-e9e77cc435ab" />
