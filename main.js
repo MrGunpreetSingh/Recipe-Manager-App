@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var container_1 = require("./simplekit/src/widget/container");
+var label_1 = require("./simplekit/src/widget/label");
+var button_1 = require("./simplekit/src/widget/button");
+var imperative_mode_1 = require("./simplekit/src/imperative-mode");
+// Other imports...
+(0, imperative_mode_1.startSimpleKit)();
+console.log('Loaded main.js');
+var app = new container_1.SKContainer();
+var title = new label_1.SKLabel({ text: "Recipe Manager" });
+var menu = new container_1.SKContainer();
+menu.addChild(new button_1.SKButton({ text: "All Recipes" }));
+menu.addChild(new button_1.SKButton({ text: "Categories" }));
+menu.addChild(new button_1.SKButton({ text: "Ingredients" }));
+menu.addChild(new button_1.SKButton({ text: "Add Recipe" }));
+var mainArea = new container_1.SKContainer();
+mainArea.addChild(new label_1.SKLabel({ text: "Welcome! Select an option from the left." }));
+var contentRow = new container_1.SKContainer();
+contentRow.addChild(menu);
+contentRow.addChild(mainArea);
+app.addChild(title);
+app.addChild(contentRow);
